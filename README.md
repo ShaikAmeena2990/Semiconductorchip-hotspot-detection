@@ -10,40 +10,28 @@ By utilizing Convolutional Neural Networks (CNN), this project aims to provide a
 
 # Dataset
 
-The dataset is sourced from the ICCAD Benchmark Suite, consisting of labeled layout images:
+The dataset is sourced from the ICCAD Benchmark consisting of labeled layout images:
 
 Classes: Hotspot and Non-Hotspot
-
 Preprocessing:
-
 Images resized to 128x128
-
 Data split into train (70%), validation (20%), and test (10%)
-
 Data augmentation applied (horizontal and vertical flips)
 
 # Project Pipeline
 
-1.Data Preparation
+1.Data Preparation:
+Image loading and splitting using splitfolders
+Augmentation with ImageDataGenerator
 
-.Image loading and splitting using splitfolders
-
-.Augmentation with ImageDataGenerator
-
-2.Model Development
-
+2.Model Development:
 CNN model using Conv2D, MaxPooling2D, Flatten, Dense, Dropout
-
 Binary classification with sigmoid activation
-
 Compiled with Adam optimizer and binary cross-entropy loss
 
-3.Training and Evaluation
-
+3.Training and Evaluation:
 Trained for 10 epochs on augmented data
-
 Validated on unseen layout images
-
 Evaluated using accuracy and loss metrics
 
 Deployment (Optional)
