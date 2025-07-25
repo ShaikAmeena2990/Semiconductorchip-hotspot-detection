@@ -2,51 +2,52 @@
 
 This project implements a deep learning-based image classification system to detect hotspots (defective regions) in semiconductor chip layouts. The model is trained on real chip layout images and deployed for predicting potential manufacturing defects.
 
-# Motivation
+##  Motivation
 
 Semiconductor manufacturing is highly sensitive to defects during photolithography. Detecting hotspots (regions prone to defects) early in the design process helps in preventing costly failures in chip fabrication. Traditional rule-based approaches struggle with complex patterns, hence the use of deep learning for accurate hotspot detection.
 
 By utilizing Convolutional Neural Networks (CNN), this project aims to provide an automated and scalable solution to identify hotspots in VLSI design layouts.
 
-# Dataset
+## Dataset
 
 The dataset is sourced from the ICCAD Benchmark consisting of labeled layout images:
 
 Classes: Hotspot and Non-Hotspot
 
-Preprocessing:
-Images resized to 128x128
+**Preprocessing**:
 
-Data split into train (70%), validation (20%), and test (10%)
+- Images resized to 128x128
 
-Data augmentation applied (horizontal and vertical flips)
+- Data split into train (70%), validation (20%), and test (10%)
 
-# Project Pipeline
+- Data augmentation applied (horizontal and vertical flips)
 
-1.Data Preparation
+## Project Pipeline
 
-Image loading and splitting using splitfolders
+1.**Data Preparation**
 
-Augmentation with ImageDataGenerator
+- Image loading and splitting using splitfolders
 
-2.Model Development
+- Augmentation with ImageDataGenerator
 
-CNN model using Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+2.**Model Development**
 
-Binary classification with sigmoid activation
+- CNN model using Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
-Compiled with Adam optimizer and binary cross-entropy loss
+- Binary classification with sigmoid activation
 
-3.Training and Evaluation
+- Compiled with Adam optimizer and binary cross-entropy loss
 
-Trained for 10 epochs on augmented data
+3.**Training and Evaluation**
 
-Validated on unseen layout images
+- Trained for 10 epochs on augmented data
 
-Evaluated using accuracy and loss metrics
+- Validated on unseen layout images
 
-Final test accuracy: 96.17%, loss: 0.14
+- Evaluated using accuracy and loss metrics
 
-# Results
+- Final test accuracy: 96.17%, loss: 0.14
+
+## Results
 
 Achieved 96.17% accuracy on unseen test data for hotspot detection using a CNN-based deep learning model trained on IC layout images.
