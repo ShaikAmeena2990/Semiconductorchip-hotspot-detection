@@ -20,27 +20,29 @@ Data augmentation applied (horizontal and vertical flips)
 
 # Project Pipeline
 
-1.Data Preparation:
+1.Data Preparation
+
 Image loading and splitting using splitfolders
+
 Augmentation with ImageDataGenerator
 
-2.Model Development:
+2.Model Development
+
 CNN model using Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+
 Binary classification with sigmoid activation
+
 Compiled with Adam optimizer and binary cross-entropy loss
 
-3.Training and Evaluation:
+3.Training and Evaluation
+
 Trained for 10 epochs on augmented data
+
 Validated on unseen layout images
+
 Evaluated using accuracy and loss metrics
 
-Deployment (Optional)
-
-Model saved using joblib or keras.models.save_model
-
-Flask API to serve predictions
-
-Dockerized and deployed via AWS or local container
+Final test accuracy: 96.17%, loss: 0.14
 
 # Results
 
