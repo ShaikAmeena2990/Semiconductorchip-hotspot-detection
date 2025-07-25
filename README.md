@@ -13,9 +13,12 @@ By utilizing Convolutional Neural Networks (CNN), this project aims to provide a
 The dataset is sourced from the ICCAD Benchmark consisting of labeled layout images:
 
 Classes: Hotspot and Non-Hotspot
+
 Preprocessing:
 Images resized to 128x128
+
 Data split into train (70%), validation (20%), and test (10%)
+
 Data augmentation applied (horizontal and vertical flips)
 
 # Project Pipeline
