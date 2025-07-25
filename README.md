@@ -26,9 +26,9 @@ Data augmentation applied (horizontal and vertical flips)
 
 1.Data Preparation
 
-Image loading and splitting using splitfolders
+.Image loading and splitting using splitfolders
 
-Augmentation with ImageDataGenerator
+.Augmentation with ImageDataGenerator
 
 2.Model Development
 
@@ -56,9 +56,4 @@ Dockerized and deployed via AWS or local container
 
 # Results
 
-Validation Accuracy: ~95%
-
-Loss: Reduced significantly over epochs, showing good learning
-
-Prediction Mechanism: Each image classified as Hotspot or Non-Hotspot, enabling automated layout screening
-
+Achieved 96.17% accuracy on unseen test data for hotspot detection using a CNN-based deep learning model trained on IC layout images.
